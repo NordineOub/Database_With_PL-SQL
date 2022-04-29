@@ -2,10 +2,21 @@
 
 This project is an example of using events and triggers in PL/SQL. 
 This project creates a network of theater companies, their ticket and show management. The situation is explained with this E/A Class diagram :
+
 <img width="1091" alt="image" src="https://user-images.githubusercontent.com/75072085/165896180-81dd1d0a-e24f-48c3-afa0-c44f866e3ad8.png">
 
 There is also this relational model between each table : 
+
 <img width="1147" alt="image" src="https://user-images.githubusercontent.com/75072085/165898656-2d5948b0-be56-48c1-b6cc-e465681b8b5a.png">
+
+
+## How to install it
+
+We created and managed this project with Oracle SQL, so our script may be not functional on other SQL database.
+You can try Oracle SQL online and for free here : https://livesql.oracle.com/
+
+Then we copy and run each sql file from part 1 to part 3.
+Finally you can write and check the results of the procedures and functions which we will detail below 
 
 ## Conditions & Management
 ### Ticket Discount
