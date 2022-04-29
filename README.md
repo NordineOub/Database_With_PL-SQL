@@ -10,6 +10,7 @@ There is also this relational model between each table :
 ## Conditions & Management
 ### Ticket Discount
 When a customer buys a ticket for a specific show at a specific date and depending on its age, they will benefit a discount (insertion a new line):
+
 - 20% if the ticket is bought 15 days before the show
 - 30% discount if it is the day of show and it less than 50% of tickets are sold
 - 50% if less than 30% of the tickets are sold
@@ -25,7 +26,9 @@ This allows to verify if these grants are from public or private funds.
 Question : Would a company be provided for two theaters at the same time? Are both shows presented in the same place?
 
 Answer : The stored procedure "pr_resultat( room name, date)"
+
          - With a cursor (select) that counts the number of shows at a specified date and in a specified theater room.
+         
          - That will check whether theater shows overlap or not.
 
 ### Cities of show per period
@@ -49,10 +52,15 @@ Answer : he stored procedure "loadFactor(Show ID)".
 ### Balance promptly in red
 
 Question : The first date when the balance of a theater will move promptly to the red (in the hypothesis when no ticket is sold out).
+
 Answer :
+
 Part 1 - Function to count the number of tickets left => Function "TICKETS(Company ID)"
+
 Part 2 - Function to calculate the balance of a company => Function"BALANCE(Company ID)"
+
 Part 3 - Table for the history accounting of the companies => Temporary table "accountingHistory"
+
 Part 4 - Trigger to retrieve the balance and the date of occurence => Trigger "TICKETS_LEFT"
 
 ### Balance permanently in red
