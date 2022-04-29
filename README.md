@@ -1,4 +1,4 @@
-# Creation of a Databse with PL/SQL Procedures and functions
+# Creation of a Database with PL/SQL Procedures and functions
 
 This project is an example of using events and triggers in PL/SQL. 
 This project creates a network of theater companies, their ticket and show management. The situation is explained with this E/A Class diagram :
